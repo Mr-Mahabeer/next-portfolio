@@ -39,7 +39,7 @@ const About = () => {
                   new people. New people new Experiences. */}
                 </p>
                 <div className="row">
-                  <div className="col-auto">
+                  {/* <div className="col-auto">
                     <div className="media align-items-center">
                       <span className="count">5</span>
                       <div className="media-body">
@@ -47,7 +47,7 @@ const About = () => {
                         Completed.
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div className="col-auto">
                     <div className="media align-items-center">
                       <span className="count">3k</span>
@@ -59,12 +59,12 @@ const About = () => {
                   </div> */}
                 </div>
                 <div className="btn-bar">
-                  <a className="px-btn px-btn-theme" href="#">
+                  <a className="px-btn px-btn-theme" href="#contactus">
                     <span>Contact Me</span>
                   </a>
-                  <a className="px-btn px-btn-theme" href="#">
+                  {/* <a className="px-btn px-btn-theme" href="#">
                     <span>Portfolio</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

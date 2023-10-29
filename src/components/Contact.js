@@ -61,14 +61,14 @@ const Contact = () => {
             <div className="contact-info">
               <h4>What’s your story? Get in touch</h4>
               <p>
-                Always available for freelancing if the right project comes
+                Always available for opportunities if the right project comes
                 along, Feel free to contact me.
               </p>
               <ul>
                 <li className="media">
                   <i className="ti-map" />
                   <span className="media-body">
-                    123 Stree New York City , United States Of America 750065.
+                    #991 Sector 91, Mohali (PB),India
                   </span>
                 </li>
                 <li className="media">
@@ -77,7 +77,7 @@ const Contact = () => {
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
-                  <span className="media-body">+044 9696 9696 3636</span>
+                  <span className="media-body">+91 99156 68595</span>
                 </li>
               </ul>
             </div>
@@ -95,9 +95,8 @@ const Contact = () => {
                         value={name}
                         id="name"
                         placeholder="Name *"
-                        className={`form-control ${
-                          error ? (!name ? "invalid" : "") : ""
-                        }`}
+                        className={`form-control ${error ? (!name ? "invalid" : "") : ""
+                          }`}
                         type="text"
                       />
                     </div>
@@ -110,9 +109,8 @@ const Contact = () => {
                         value={email}
                         id="email"
                         placeholder="Email *"
-                        className={`form-control ${
-                          error ? (!email ? "invalid" : "") : ""
-                        }`}
+                        className={`form-control ${error ? (!email ? "invalid" : "") : ""
+                          }`}
                         type="email"
                       />
                     </div>
@@ -125,9 +123,8 @@ const Contact = () => {
                         value={subject}
                         id="subject"
                         placeholder="Subject *"
-                        className={`form-control ${
-                          error ? (!subject ? "invalid" : "") : ""
-                        }`}
+                        className={`form-control ${error ? (!subject ? "invalid" : "") : ""
+                          }`}
                         type="text"
                       />
                     </div>
@@ -141,9 +138,8 @@ const Contact = () => {
                         id="message"
                         placeholder="Your message *"
                         rows={5}
-                        className={`form-control ${
-                          error ? (!message ? "invalid" : "") : ""
-                        }`}
+                        className={`form-control ${error ? (!message ? "invalid" : "") : ""
+                          }`}
                       />
                     </div>
                   </div>
@@ -186,7 +182,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="col-12">
+          {/* <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">
                 <iframe
@@ -196,7 +192,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
