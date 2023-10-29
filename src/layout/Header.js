@@ -46,16 +46,16 @@ const Header = ({ blog }) => {
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="https://www.instagram.com/mahvi_singh_/" target="_blank">
+          <a href="https://www.instagram.com/mahvi_singh_/" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram" />
           </a>
-          <a href="https://twitter.com/_mahabeer_" target="_blank">
+          <a href="https://twitter.com/_mahabeer_" target="_blank" rel="noreferrer">
             <i className="fab fa-twitter" />
           </a>
-          <a href="https://wa.me/919915668595" target="_blank">
+          <a href="https://wa.me/919915668595" target="_blank" rel="noreferrer">
             <i className="fab fa-whatsapp" />
           </a>
-          <a href="https://www.linkedin.com/in/mahabeer-mahabeer/" target="_blank">
+          <a href="https://www.linkedin.com/in/mahabeer-mahabeer/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin-in" />
           </a>
           {/* <a href="#">
