@@ -1,4 +1,5 @@
 // import dynamic from "next/dynamic";
+import { getLatestPosts } from "../lib/api";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
@@ -8,7 +9,7 @@ import Layout from "../src/layout/Layout";
 // const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
 //   ssr: false,
 // });
-const Index = () => {
+const Index = ({ latestPosts }) => {
   return (
     <Layout>
       <section
@@ -57,7 +58,7 @@ const Index = () => {
       {/* <Portfolio /> */}
       {/* End Portfolio */}
       {/* Blog */}
-      <Blog />
+      <Blog blogs={latestPosts} />
       {/* End Blog */}
       {/* Contact us */}
       <Contact />
@@ -65,3 +66,12 @@ const Index = () => {
   );
 };
 export default Index;
+
+
+export async function getStaticProps() {
+  const latestPosts = await getLatestPosts();
+
+  return {
+    props: { latestPosts },
+  };
+}

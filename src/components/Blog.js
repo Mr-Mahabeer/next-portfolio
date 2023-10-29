@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Blog = () => {
+const Blog = ({ blogs }) => {
   return (
     <section
       id="blog"
@@ -12,94 +12,33 @@ const Blog = () => {
           <h3>Latest Blog.</h3>
         </div>
         <div className="row">
-          <div className="col-md-6 m-15px-tb">
-            <div className="blog-grid">
-              <div className="blog-img">
-                <Link href="/single-blog">
-                  <a>
-                    <img src="static/img/blog-1.jpg" title="" alt="" />
-                  </a>
-                </Link>
-              </div>
-              <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
-                <h6>
-                  <Link href="/single-blog">
-                    <a>
-                      Five Solid Evidences Attending Design Is Good For Your
-                      Career Development.
+          {(blogs).slice(0.4)?.map(data => {
+            const blog = data.node
+            const author = blog?.author?.node
+            const featuredImage = blog.featuredImage?.node?.sourceUrl ?? "static/img/blog-1.jpg"
+            return <div className="col-md-6 m-15px-tb">
+              <div className="blog-grid">
+                <div className="blog-img">
+                  <Link href={`https://www.technojunction.in/post/${blog.slug}`} target="_blank" >
+                    <a target="_blank" rel="noreferrer">
+                      <img src={featuredImage} title="" alt="" />
                     </a>
                   </Link>
-                </h6>
+                </div>
+                <div className="blog-info">
+                  <div className="meta">{blog?.date} - {author.name}</div>
+                  <h6>
+                    <Link href={`https://www.technojunction.in/post/${blog.slug}`}>
+                      <a target="_blank" rel="noreferrer">
+                        {blog.title}
+                      </a>
+                    </Link>
+                  </h6>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-6 m-15px-tb">
-            <div className="blog-grid">
-              <div className="blog-img">
-                <Link href="/single-blog">
-                  <a>
-                    <img src="static/img/blog-2.jpg" title="" alt="" />
-                  </a>
-                </Link>
-              </div>
-              <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
-                <h6>
-                  <Link href="/single-blog">
-                    <a>
-                      Ten Mind-Blowing Reasons Why Design Is Using This
-                      Technique For Exposure.
-                    </a>
-                  </Link>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 m-15px-tb">
-            <div className="blog-grid">
-              <div className="blog-img">
-                <Link href="/single-blog">
-                  <a>
-                    <img src="static/img/blog-3.jpg" title="" alt="" />
-                  </a>
-                </Link>
-              </div>
-              <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
-                <h6>
-                  <Link href="/single-blog">
-                    <a>
-                      I Will Tell You The Truth About Design In The Next 60
-                      Seconds.
-                    </a>
-                  </Link>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 m-15px-tb">
-            <div className="blog-grid">
-              <div className="blog-img">
-                <Link href="/single-blog">
-                  <a>
-                    <img src="static/img/blog-4.jpg" title="" alt="" />
-                  </a>
-                </Link>
-              </div>
-              <div className="blog-info">
-                <div className="meta">29/FEB/2022 - WEBSITE - 1 COMMENT</div>
-                <h6>
-                  <Link href="/single-blog">
-                    <a>
-                      What You Know About Design And What You {`Don't`} Know
-                      About Design.
-                    </a>
-                  </Link>
-                </h6>
-              </div>
-            </div>
-          </div>
+          })}
+
           <div className="col-12 read-more-blog text-center">
             <Link href="https://www.technojunction.in/" target="_blank">
               <a target="_blank" className="px-btn px-btn-theme">More Blogs</a>
