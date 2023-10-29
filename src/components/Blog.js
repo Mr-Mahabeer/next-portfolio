@@ -12,11 +12,11 @@ const Blog = ({ blogs }) => {
           <h3>Latest Blog.</h3>
         </div>
         <div className="row">
-          {(blogs).slice(0.4)?.map(data => {
+          {(blogs).slice(0.4)?.map((data, index) => {
             const blog = data.node
             const author = blog?.author?.node
             const featuredImage = blog.featuredImage?.node?.sourceUrl ?? "static/img/blog-1.jpg"
-            return <div className="col-md-6 m-15px-tb">
+            return <div className="col-md-6 m-15px-tb" key={index}>
               <div className="blog-grid">
                 <div className="blog-img">
                   <Link href={`https://www.technojunction.in/post/${blog.slug}`} target="_blank" >
