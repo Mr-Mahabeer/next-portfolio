@@ -27,9 +27,8 @@ const Index = () => {
                     I Am Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    I design and develop services for customers of all sizes,
-                    specializing in creating stylish, modern websites, web
-                    services and online stores.
+                    I do development services for customers of all sizes,
+                    specializing in creating stylish, modern websites and mobile applications.
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="#">
