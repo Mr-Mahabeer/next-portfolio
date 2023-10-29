@@ -28,8 +28,8 @@ const About = () => {
                 </h3>
                 <p>
 
-                  I'm a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, I'm part of the talented team at Ellocent Labs in Mohali. My expertise lies in creating exceptional user experiences using cutting-edge technologies. I excel in React.js, Next.js, and React Native, enabling me to craft cross-platform mobile applications with a native look and feel.
-                  I'm excited to bring my expertise to the table. Together, we can build remarkable digital experiences that captivate and engage users.
+                  {`I'm`} a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, {`I'm`} part of the talented team at Ellocent Labs in Mohali. My expertise lies in creating exceptional user experiences using cutting-edge technologies. I excel in React.js, Next.js, and React Native, enabling me to craft cross-platform mobile applications with a native look and feel.
+                  {`I'm`} excited to bring my expertise to the table. Together, we can build remarkable digital experiences that captivate and engage users.
 
 
 
@@ -186,7 +186,7 @@ const About = () => {
                   <label>Ellocent Labs | On Site | May 2022 - Present</label>
                   <div className="rb-time">Full Time</div>
                   <p>
-                    I'm a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, I'm part of the talented team at Ellocent Labs in Mohali.
+                    {`I'm`} a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, {`I'm`} part of the talented team at Ellocent Labs in Mohali.
                   </p>
                 </div>
               </div>
