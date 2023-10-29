@@ -9,9 +9,11 @@ const Contact = () => {
   });
   const { name, email, message, subject } = mailData;
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
-  const onSubmit = (e) => {
+
+  const onSubmit = async (e) => {
     e.preventDefault();
     if (
       name.length === 0 ||
@@ -22,23 +24,27 @@ const Contact = () => {
       setError(true);
       clearError();
     } else {
-      emailjs
-        .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
-          mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ name: "", email: "", message: "", subject: "" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
+      try {
+        setLoading(true)
+        const response = await emailjs
+          .send(
+            process.env.NEXT_PUBLIC_SERVICE_ID,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID,
+            mailData,
+            process.env.NEXT_PUBLIC_PUBLIC_KEY,
+          )
+        if (response) {
+          setError(false);
+          clearError();
+          setMailData({ name: "", email: "", message: "", subject: "" });
+        }
+      } catch (error) {
+        console.log("error: ", error)
+      } finally {
+        setLoading(false)
+
+      }
+
     }
   };
   const clearError = () => {
@@ -154,11 +160,12 @@ const Contact = () => {
                         {" "}
                         send message
                       </button> */}
-                      <input
+                      <button
+                        disabled={loading}
                         className="px-btn px-btn-theme"
                         type="submit"
-                        value="send message"
-                      />
+                        style={{ cursor: loading ? "not-allowed" : "auto" }}
+                      >send message</button>
                     </div>
                     <span
                       id="suce_message"
@@ -194,8 +201,8 @@ const Contact = () => {
             </div>
           </div> */}
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 export default Contact;
