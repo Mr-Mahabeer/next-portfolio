@@ -54,7 +54,7 @@ const Index = () => {
       <Services />
       {/* End Services */}
       {/* Portfolio */}
-      <Portfolio />
+      {/* <Portfolio /> */}
       {/* End Portfolio */}
       {/* Blog */}
       <Blog />

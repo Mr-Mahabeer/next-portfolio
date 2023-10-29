@@ -101,8 +101,8 @@ const Blog = () => {
             </div>
           </div>
           <div className="col-12 read-more-blog text-center">
-            <Link href="/blog">
-              <a className="px-btn px-btn-theme">More Blogs</a>
+            <Link href="https://www.technojunction.in/" target="_blank">
+              <a target="_blank" className="px-btn px-btn-theme">More Blogs</a>
             </Link>
           </div>
         </div>
