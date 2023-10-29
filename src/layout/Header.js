@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
 const Header = ({ blog }) => {
+
   const [sideBarToggle, setSideBarToggle] = useState(false);
   useEffect(() => {
     if (!blog) {
@@ -30,9 +31,8 @@ const Header = ({ blog }) => {
       {/* End Header */}
       {/* nav bar */}
       <header
-        className={`header-left ${
-          sideBarToggle ? "menu-open menu-open-desk" : ""
-        }`}
+        className={`header-left ${sideBarToggle ? "menu-open menu-open-desk" : ""
+          }`}
       >
         <div className="scroll-bar">
           <div className="hl-top">
@@ -40,7 +40,7 @@ const Header = ({ blog }) => {
               <div className="img">
                 <img src="static/img/about-me.jpg" title="" alt="" />
               </div>
-              <h5>Sergiobi</h5>
+              <h5>Mr. Mahabeer</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
@@ -89,12 +89,12 @@ const MenuWithOutBlog = () => {
           <span>Services</span>
         </a>
       </li>
-      <li data-menuanchor="work">
+      {/* <li data-menuanchor="work">
         <a className="nav-link" href="#work">
           <i className="ti-bookmark-alt" />
           <span>Portfolio</span>
         </a>
-      </li>
+      </li> */}
       <li data-menuanchor="blog" className="blog">
         <a className="nav-link" href="#blog">
           <i className="ti-layout-media-overlay-alt-2" />
@@ -145,16 +145,16 @@ const MenuWithBlog = () => {
             </a>
           </Link>
         </li>
-        <li data-menuanchor="work">
+        {/* <li data-menuanchor="work">
           <Link href="/#work">
             <a className="nav-link">
               <i className="ti-bookmark-alt" />
               <span>Portfolio</span>
             </a>
           </Link>
-        </li>
+        </li> */}
         <li data-menuanchor="blog" className="blog active">
-          <Link href="/#blog">
+          <Link href="#">
             <a className="nav-link">
               <i className="ti-layout-media-overlay-alt-2" />
               <span>Blogs</span>
