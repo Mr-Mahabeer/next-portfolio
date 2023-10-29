@@ -46,21 +46,21 @@ const Header = ({ blog }) => {
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="#">
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="#">
+          <a href="https://www.instagram.com/mahvi_singh_/" target="_blank">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/_mahabeer_" target="_blank">
+            <i className="fab fa-twitter" />
+          </a>
+          <a href="https://wa.me/919915668595" target="_blank">
+            <i className="fab fa-whatsapp" />
+          </a>
+          <a href="https://www.linkedin.com/in/mahabeer-mahabeer/" target="_blank">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a href="#">
+          {/* <a href="#">
             <i className="fab fa-pinterest" />
-          </a>
+          </a> */}
         </div>
       </header>
     </Fragment>

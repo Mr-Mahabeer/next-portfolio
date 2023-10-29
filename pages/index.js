@@ -31,7 +31,7 @@ const Index = () => {
                     specializing in creating stylish, modern websites and mobile applications.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
+                    <a className="px-btn px-btn-theme" href="static/resume/MahabeerResume.pdf" target="_blank">
                       Donwload CV
                     </a>
                   </div>
