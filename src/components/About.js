@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <section
@@ -11,7 +13,13 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me-section.jpg" title="" alt="" />
+                  <Image
+                    src="/static/img/about-me-section.jpg"
+                    title=""
+                    alt=""
+                    height={667}
+                    width={500}
+                  />
                 </div>
               </div>
             </div>
@@ -27,12 +35,16 @@ const About = () => {
                   experience.{" "}
                 </h3>
                 <p>
-
-                  {`I'm`} a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, {`I'm`} part of the talented team at Ellocent Labs in Mohali. My expertise lies in creating exceptional user experiences using cutting-edge technologies. I excel in React.js, Next.js, and React Native, enabling me to craft cross-platform mobile applications with a native look and feel.
-                  {`I'm`} excited to bring my expertise to the table. Together, we can build remarkable digital experiences that captivate and engage users.
-
-
-
+                  {`I'm`} a dedicated front-end developer with 1.5 years of
+                  experience in web and mobile app development. Currently,{" "}
+                  {`I'm`} part of the talented team at Ellocent Labs in Mohali.
+                  My expertise lies in creating exceptional user experiences
+                  using cutting-edge technologies. I excel in React.js, Next.js,
+                  and React Native, enabling me to craft cross-platform mobile
+                  applications with a native look and feel.
+                  {`I'm`} excited to bring my expertise to the table. Together,
+                  we can build remarkable digital experiences that captivate and
+                  engage users.
                   {/* {`I'm`} a Front-end Developer with over 1.5 years of
                   experience. {`I'm`} from San Francisco. I code and create web
                   elements for amazing people around the world. I like work with
@@ -79,8 +91,7 @@ const About = () => {
             <ul className="aducation-box">
               <li>
                 <span>2022-Present</span>
-                <h6>Master of Computer Application
-                </h6>
+                <h6>Master of Computer Application</h6>
                 <p>Mangalayatan University - UP</p>
               </li>
               <li>
@@ -104,9 +115,9 @@ const About = () => {
             <div className="skills-box">
               <h3>My skills</h3>
               <p>
-                {`I'm`} a Front-end Developer with over 1.5 years of
-                experience. I code and create web elements for amazing people
-                around the world. I like to work with new people. New people new
+                {`I'm`} a Front-end Developer with over 1.5 years of experience.
+                I code and create web elements for amazing people around the
+                world. I like to work with new people. New people new
                 Experiences.
               </p>
               <div className="skill-lt">
@@ -164,7 +175,6 @@ const About = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -177,7 +187,13 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/ellocent.svg" title="" alt="" />
+                  <Image
+                    height={248}
+                    width={280}
+                    src="/static/img/ellocent.svg"
+                    title="Company"
+                    alt="Company"
+                  />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -186,7 +202,10 @@ const About = () => {
                   <label>Ellocent Labs | On Site | May 2022 - Present</label>
                   <div className="rb-time">Full Time</div>
                   <p>
-                    {`I'm`} a dedicated front-end developer with 1.5 years of experience in web and mobile app development. Currently, {`I'm`} part of the talented team at Ellocent Labs in Mohali.
+                    {`I'm`} a dedicated front-end developer with 1.5 years of
+                    experience in web and mobile app development. Currently,{" "}
+                    {`I'm`} part of the talented team at Ellocent Labs in
+                    Mohali.
                   </p>
                 </div>
               </div>

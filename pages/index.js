@@ -1,4 +1,5 @@
 // import dynamic from "next/dynamic";
+import Image from "next/image";
 import { getLatestPosts } from "../lib/api";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
@@ -29,10 +30,15 @@ const Index = ({ latestPosts }) => {
                   </p>
                   <p className="desc">
                     I do development services for customers of all sizes,
-                    specializing in creating stylish, modern websites and mobile applications.
+                    specializing in creating stylish, modern websites and mobile
+                    applications.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="static/resume/MahabeerResume.pdf" target="_blank">
+                    <a
+                      className="px-btn px-btn-theme"
+                      href="static/resume/MahabeerResume.pdf"
+                      target="_blank"
+                    >
                       Donwload CV
                     </a>
                   </div>
@@ -40,7 +46,13 @@ const Index = ({ latestPosts }) => {
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/about-me-about.jpeg" title="" alt="" />
+                  <Image
+                    width={500}
+                    height={600}
+                    src="/static/img/about-me-about.jpeg"
+                    title="Mahabeer"
+                    alt="Mahabeer"
+                  />
                 </div>
               </div>
             </div>
@@ -66,7 +78,6 @@ const Index = ({ latestPosts }) => {
   );
 };
 export default Index;
-
 
 export async function getStaticProps() {
   const latestPosts = await getLatestPosts();

@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 
-const Testimonials = dynamic(() => import("./Testimonials"), {
-  ssr: false,
-});
+// const Testimonials = dynamic(() => import("./Testimonials"), {
+//   ssr: false,
+// });
 
 const Services = () => {
   return (

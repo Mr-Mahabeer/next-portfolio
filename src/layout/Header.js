@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
+import Image from "next/image";
 const Header = ({ blog }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
   useEffect(() => {
     if (!blog) {
       activeSection();
     }
-  }, []);
+  }, [blog]);
   return (
     <Fragment>
       <div className="mob-header">
@@ -38,7 +39,13 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpeg" title="" alt="" />
+                <Image
+                  height={667}
+                  width={500}
+                  src="/static/img/about-me.jpeg"
+                  title=""
+                  alt=""
+                />
               </div>
               <h5>Mahabeer</h5>
             </div>
