@@ -1,4 +1,4 @@
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { useState } from "react";
 const Contact = () => {
   const [mailData, setMailData] = useState({
@@ -25,26 +25,23 @@ const Contact = () => {
       clearError();
     } else {
       try {
-        setLoading(true)
-        const response = await emailjs
-          .send(
-            process.env.NEXT_PUBLIC_SERVICE_ID,
-            process.env.NEXT_PUBLIC_TEMPLATE_ID,
-            mailData,
-            process.env.NEXT_PUBLIC_PUBLIC_KEY,
-          )
+        setLoading(true);
+        const response = await emailjs.send(
+          process.env.NEXT_PUBLIC_SERVICE_ID,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID,
+          mailData,
+          process.env.NEXT_PUBLIC_PUBLIC_KEY
+        );
         if (response) {
           setError(false);
           clearError();
           setMailData({ name: "", email: "", message: "", subject: "" });
         }
       } catch (error) {
-        console.log("error: ", error)
+        console.log("error: ", error);
       } finally {
-        setLoading(false)
-
+        setLoading(false);
       }
-
     }
   };
   const clearError = () => {
@@ -101,8 +98,9 @@ const Contact = () => {
                         value={name}
                         id="name"
                         placeholder="Name *"
-                        className={`form-control ${error ? (!name ? "invalid" : "") : ""
-                          }`}
+                        className={`form-control ${
+                          error ? (!name ? "invalid" : "") : ""
+                        }`}
                         type="text"
                       />
                     </div>
@@ -115,8 +113,9 @@ const Contact = () => {
                         value={email}
                         id="email"
                         placeholder="Email *"
-                        className={`form-control ${error ? (!email ? "invalid" : "") : ""
-                          }`}
+                        className={`form-control ${
+                          error ? (!email ? "invalid" : "") : ""
+                        }`}
                         type="email"
                       />
                     </div>
@@ -129,8 +128,9 @@ const Contact = () => {
                         value={subject}
                         id="subject"
                         placeholder="Subject *"
-                        className={`form-control ${error ? (!subject ? "invalid" : "") : ""
-                          }`}
+                        className={`form-control ${
+                          error ? (!subject ? "invalid" : "") : ""
+                        }`}
                         type="text"
                       />
                     </div>
@@ -144,8 +144,9 @@ const Contact = () => {
                         id="message"
                         placeholder="Your message *"
                         rows={5}
-                        className={`form-control ${error ? (!message ? "invalid" : "") : ""
-                          }`}
+                        className={`form-control ${
+                          error ? (!message ? "invalid" : "") : ""
+                        }`}
                       />
                     </div>
                   </div>
@@ -165,7 +166,9 @@ const Contact = () => {
                         className="px-btn px-btn-theme"
                         type="submit"
                         style={{ cursor: loading ? "not-allowed" : "auto" }}
-                      >send message</button>
+                      >
+                        send message
+                      </button>
                     </div>
                     <span
                       id="suce_message"
@@ -201,8 +204,8 @@ const Contact = () => {
             </div>
           </div> */}
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   );
 };
 export default Contact;
