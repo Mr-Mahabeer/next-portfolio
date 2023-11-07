@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
 const Header = ({ blog }) => {
-
   const [sideBarToggle, setSideBarToggle] = useState(false);
   useEffect(() => {
     if (!blog) {
@@ -15,7 +14,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Mr. Mahabeer</a>
+              <a className="logo-text">Mahabeer</a>
             </Link>
           </div>
           <button
@@ -31,8 +30,9 @@ const Header = ({ blog }) => {
       {/* End Header */}
       {/* nav bar */}
       <header
-        className={`header-left ${sideBarToggle ? "menu-open menu-open-desk" : ""
-          }`}
+        className={`header-left ${
+          sideBarToggle ? "menu-open menu-open-desk" : ""
+        }`}
       >
         <div className="scroll-bar">
           <div className="hl-top">
@@ -40,22 +40,34 @@ const Header = ({ blog }) => {
               <div className="img">
                 <img src="static/img/about-me.jpeg" title="" alt="" />
               </div>
-              <h5>Mr. Mahabeer</h5>
+              <h5>Mahabeer</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="https://www.instagram.com/mahvi_singh_/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/mahvi_singh_/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-instagram" />
           </a>
-          <a href="https://twitter.com/_mahabeer_" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/_mahabeer_"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-twitter" />
           </a>
           <a href="https://wa.me/919915668595" target="_blank" rel="noreferrer">
             <i className="fab fa-whatsapp" />
           </a>
-          <a href="https://www.linkedin.com/in/mahabeer-mahabeer/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/mahabeer-mahabeer/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fab fa-linkedin-in" />
           </a>
           {/* <a href="#">
