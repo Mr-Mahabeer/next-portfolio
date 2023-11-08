@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
+import Script from "next/script";
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
   useEffect(() => {
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       <Head>
         <title>Mahabeer - Portfolio</title>
+
         {/* <!-- Favicon --> */}
 
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -56,6 +58,19 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
+      <div className="container">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DQYBB962X0" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-DQYBB962X0');
+        `}
+        </Script>
+      </div>
+
       {load && <PreLoader />}
       <Component {...pageProps} />
     </Fragment>
