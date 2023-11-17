@@ -4,6 +4,7 @@ import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
 import Script from "next/script";
+
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
   useEffect(() => {
@@ -15,7 +16,16 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>Mahabeer - Portfolio</title>
+        <title>Mahabeer - Front end Developer</title>
+        <meta
+          name="description"
+          content="Experienced front end developer offering a range of services to create stunning and user-friendly websites and mobile apps. Specializing in responsive design, HTML5, CSS3, JavaScript, React, React Native and more.Contact me today for a free consultation."
+        />
+
+        <meta
+          name="keywords"
+          content="front end developer, React, React Native, Tailwind CSS, web development, mobile app development, skills, expertise, commitment"
+        />
 
         {/* <!-- Favicon --> */}
 
