@@ -128,6 +128,15 @@ const About = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="skill-lt">
+                <h6>React Native</h6>
+                <div className="skill-bar">
+                  <div className="skill-bar-in" style={{ width: "98%" }}>
+                    <span data-toggle="tooltip" title="98%" />
+                  </div>
+                </div>
+              </div>
               {/* /skill */}
               <div className="skill-lt">
                 <h6>Next.js</h6>
