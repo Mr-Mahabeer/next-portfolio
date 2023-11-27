@@ -58,7 +58,10 @@ const DocumentScannerPrivacyPolicy = () => (
       <p>
         If you have any questions or concerns about this Privacy Policy, please
         contact us at mahabeer.fcs.gna@gmail.com or click{" "}
-        <Link href="/#contactus">Here</Link>.
+        <Link href="https://www.mahabeer.me/#contactus" target="_blank">
+          <a target="_blank">Here</a>
+        </Link>
+        .
       </p>
     </p>
 
