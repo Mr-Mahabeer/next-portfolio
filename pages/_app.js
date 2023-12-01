@@ -13,6 +13,25 @@ function MyApp({ Component, pageProps }) {
     }, 1000);
   }, []);
 
+  const initBot = () => {
+    window.botpressWebChat.init({
+      composerPlaceholder: "Chat with bot",
+      botConversationDescription:
+        "This bot is under development phase.",
+      botId: process.env.NEXT_PUBLIC_BOT_ID,
+      hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+      messagingUrl: "https://messaging.botpress.cloud",
+      clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
+      webhookId: process.env.NEXT_PUBLIC_WEBHOOK_ID,
+      lazySocket: true,
+      themeName: "prism",
+      frontendVersion: "v1",
+      showPoweredBy: false,
+      theme: "prism",
+      themeColor: "#2563eb",
+    });
+  };
+
   return (
     <Fragment>
       <Head>
@@ -70,6 +89,12 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div className="container">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-DQYBB962X0" />
+        <Script
+          src="https://cdn.botpress.cloud/webchat/v1/inject.js"
+          onLoad={() => {
+            initBot();
+          }}
+        />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
