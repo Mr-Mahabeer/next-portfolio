@@ -31,11 +31,11 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Front-end Developer with over 1.5 years of
+                  {`I'm`} a Front-end Developer with about 2 years of
                   experience.{" "}
                 </h3>
                 <p>
-                  {`I'm`} a dedicated front-end developer with 1.5 years of
+                  {`I'm`} a dedicated front-end developer with about 2 years of
                   experience in web and mobile app development. Currently,{" "}
                   {`I'm`} part of the talented team at Ellocent Labs in Mohali.
                   My expertise lies in creating exceptional user experiences
@@ -115,7 +115,7 @@ const About = () => {
             <div className="skills-box">
               <h3>My skills</h3>
               <p>
-                {`I'm`} a Front-end Developer with over 1.5 years of experience.
+                {`I'm`} a Front-end Developer with about 2 years of experience.
                 I code and create web elements for amazing people around the
                 world. I like to work with new people. New people new
                 Experiences.
@@ -211,8 +211,8 @@ const About = () => {
                   <label>Ellocent Labs | On Site | May 2022 - Present</label>
                   <div className="rb-time">Full Time</div>
                   <p>
-                    {`I'm`} a dedicated front-end developer with 1.5 years of
-                    experience in web and mobile app development. Currently,{" "}
+                    {`I'm`} a dedicated front-end developer with about 2 years
+                    of experience in web and mobile app development. Currently,{" "}
                     {`I'm`} part of the talented team at Ellocent Labs in
                     Mohali.
                   </p>
