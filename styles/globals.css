@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* image popup */
 img.mfp-img {
   box-shadow: 0 0 8px rgb(0 0 0 / 60%);
@@ -17,9 +18,11 @@ img.mfp-img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .mfp-img-container .mfp-content {
   max-width: 400px !important;
 }
+
 .mfp-img-container .mfp-close {
   top: -110px;
   right: -24px;
@@ -32,12 +35,14 @@ img.mfp-img {
 body {
   overflow-x: hidden;
 }
+
 .video-bg {
   position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
 }
+
 iframe {
   width: 100%;
   height: 100%;
@@ -48,6 +53,7 @@ iframe {
     top: 71px;
     right: 13px;
   }
+
   .demo-back-link {
     right: 13px;
     top: 130px;
@@ -57,6 +63,7 @@ iframe {
 .glitch-home h1 {
   color: #fff !important;
 }
+
 .glitch-home .lead {
   color: #fff !important;
 }
@@ -65,9 +72,11 @@ iframe {
   .container {
     width: 950px;
   }
+
   .about-me .img img {
     max-width: 100%;
   }
+
   .header-left .nav-menu li .nav-link {
     padding: 12px 30px;
   }
@@ -78,10 +87,12 @@ iframe {
   width: 310px;
   height: 310px;
 }
+
 .header-left .hl-top h5 {
   margin: 15px 0 0;
   font-size: 13px;
 }
+
 .header-left .hl-top .img {
   width: 100px;
   height: 100px;
@@ -116,4 +127,59 @@ iframe {
   margin-top: 20px;
   font-size: 14px;
   color: #555;
+}
+
+
+/* ######################DETELE ACC CSS####################### */
+
+#account-deletion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#account-deletion-container h2 {
+  margin-bottom: 10px;
+}
+
+#account-deletion-container p {
+  margin-bottom: 20px;
+}
+
+#account-deletion-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#account-deletion-container label {
+  margin-bottom: 5px;
+}
+
+#account-deletion-container input[type="email"] {
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+#account-deletion-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#account-deletion-container button:hover {
+  background-color: #0056b3;
+}
+#account-deletion-container button:disabled {
+  background-color: #95afca;
+}
+
+.email-error {
+  color: red
 }
