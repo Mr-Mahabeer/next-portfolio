@@ -10,7 +10,6 @@ const nextConfig = {
   output: "export",
   // basePath: "/next-portfolio",
   // assetPrefix: "/next-portfolio",
-  o
 };
 
 module.exports = nextConfig;
