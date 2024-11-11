@@ -5,6 +5,7 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
+    unoptimized: true,
     domains: ["api.technojunction.in"],
   },
   output: "export",
