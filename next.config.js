@@ -7,7 +7,7 @@ const nextConfig = {
   images: {
     domains: ["api.technojunction.in"],
   },
-  output: "standalone",
+  output: "export",
 };
 
 module.exports = nextConfig;
