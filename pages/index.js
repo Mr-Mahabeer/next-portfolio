@@ -69,7 +69,7 @@ const Index = ({ latestPosts }) => {
       {/* <Portfolio /> */}
       {/* End Portfolio */}
       {/* Blog */}
-      <Blog blogs={[]} />
+      {/* <Blog blogs={[]} /> */}
       {/* End Blog */}
       {/* Contact us */}
       <Contact />
