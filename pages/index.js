@@ -1,6 +1,5 @@
 // import dynamic from "next/dynamic";
 import Image from "next/image";
-import { getLatestPosts } from "../lib/api";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
@@ -70,7 +69,7 @@ const Index = ({ latestPosts }) => {
       {/* <Portfolio /> */}
       {/* End Portfolio */}
       {/* Blog */}
-      <Blog blogs={latestPosts} />
+      <Blog blogs={[]} />
       {/* End Blog */}
       {/* Contact us */}
       <Contact />
@@ -80,9 +79,7 @@ const Index = ({ latestPosts }) => {
 export default Index;
 
 export async function getStaticProps() {
-  const latestPosts = await getLatestPosts();
-
   return {
-    props: { latestPosts },
+    props: {},
   };
 }

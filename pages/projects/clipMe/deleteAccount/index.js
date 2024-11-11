@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-const BASE_URL = process.env.NEXT_PUBLIC_CLIPME_BASE_URL;
+const BASE_URL = "http://localhost:5501"
 
 function validateEmail(email) {
   return emailRegex.test(email);
