@@ -48,7 +48,7 @@ const Index = ({ latestPosts }) => {
                   <Image
                     width={500}
                     height={600}
-                    src="/static/img/about-me-about.jpeg"
+                    src="./static/img/about-me-about.jpeg"
                     title="Mahabeer"
                     alt="Mahabeer"
                   />

@@ -14,7 +14,7 @@ const About = () => {
               <div className="img">
                 <div className="img-in">
                   <Image
-                    src="/static/img/about-me-section.jpg"
+                    src="./static/img/about-me-section.jpg"
                     title=""
                     alt=""
                     height={667}
@@ -199,7 +199,7 @@ const About = () => {
                   <Image
                     height={248}
                     width={280}
-                    src="/static/img/ellocent.svg"
+                    src="./static/img/ellocent.svg"
                     title="Company"
                     alt="Company"
                   />

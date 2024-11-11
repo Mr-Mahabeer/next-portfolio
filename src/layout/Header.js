@@ -42,7 +42,7 @@ const Header = ({ blog }) => {
                 <Image
                   height={667}
                   width={500}
-                  src="/static/img/about-me.jpeg"
+                  src="./static/img/about-me.jpeg"
                   title=""
                   alt=""
                 />
