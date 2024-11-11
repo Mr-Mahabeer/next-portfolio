@@ -8,8 +8,9 @@ const nextConfig = {
     domains: ["api.technojunction.in"],
   },
   output: "export",
-  basePath: "/next-portfolio",
-  assetPrefix: "/next-portfolio",
+  // basePath: "/next-portfolio",
+  // assetPrefix: "/next-portfolio",
+  o
 };
 
 module.exports = nextConfig;
