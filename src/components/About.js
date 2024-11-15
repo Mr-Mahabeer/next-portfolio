@@ -31,11 +31,11 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Front-end Developer with about 2 years of
+                  {`I'm`} a Front-end Developer with about 2.7 years of
                   experience.{" "}
                 </h3>
                 <p>
-                  {`I'm`} a dedicated front-end developer with about 2 years of
+                  {`I'm`} a dedicated front-end developer with about 2.7 years of
                   experience in web and mobile app development. Currently,{" "}
                   {`I'm`} part of the talented team at Ellocent Labs in Mohali.
                   My expertise lies in creating exceptional user experiences
@@ -45,38 +45,15 @@ const About = () => {
                   {`I'm`} excited to bring my expertise to the table. Together,
                   we can build remarkable digital experiences that captivate and
                   engage users.
-                  {/* {`I'm`} a Front-end Developer with over 1.5 years of
-                  experience. {`I'm`} from San Francisco. I code and create web
-                  elements for amazing people around the world. I like work with
-                  new people. New people new Experiences. */}
+
                 </p>
                 <div className="row">
-                  {/* <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">5</span>
-                      <div className="media-body">
-                        Projects <br />
-                        Completed.
-                      </div>
-                    </div>
-                  </div> */}
-                  {/* <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">3k</span>
-                      <div className="media-body">
-                        Satisfied <br />
-                        Clients.
-                      </div>
-                    </div>
-                  </div> */}
+
                 </div>
                 <div className="btn-bar">
                   <a className="px-btn px-btn-theme" href="#contactus">
                     <span>Contact Me</span>
                   </a>
-                  {/* <a className="px-btn px-btn-theme" href="#">
-                    <span>Portfolio</span>
-                  </a> */}
                 </div>
               </div>
             </div>
@@ -90,7 +67,7 @@ const About = () => {
           <div className="col-lg-4 m-15px-tb">
             <ul className="aducation-box">
               <li>
-                <span>2022-Present</span>
+                <span>2022-2024</span>
                 <h6>Master of Computer Application</h6>
                 <p>Mangalayatan University - UP</p>
               </li>
@@ -115,7 +92,7 @@ const About = () => {
             <div className="skills-box">
               <h3>My skills</h3>
               <p>
-                {`I'm`} a Front-end Developer with about 2 years of experience.
+                {`I'm`} a Front-end Developer with about 2.7 years of experience.
                 I code and create web elements for amazing people around the
                 world. I like to work with new people. New people new
                 Experiences.
@@ -168,7 +145,7 @@ const About = () => {
               {/* /skill */}
 
               <div className="skill-lt">
-                <h6>SQL</h6>
+                <h6>Svelte Js</h6>
                 <div className="skill-bar">
                   <div className="skill-bar-in" style={{ width: "80%" }}>
                     <span data-toggle="tooltip" title="80%" />
@@ -179,8 +156,8 @@ const About = () => {
               <div className="skill-lt">
                 <h6>Git</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "70%" }}>
-                    <span data-toggle="tooltip" title="70%" />
+                  <div className="skill-bar-in" style={{ width: "80%" }}>
+                    <span data-toggle="tooltip" title="80%" />
                   </div>
                 </div>
               </div>
@@ -207,8 +184,8 @@ const About = () => {
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>Ellocent Labs | On Site | May 2022 - Present</label>
+                  <h6>Senior Front-End Developer</h6>
+                  <label>Ellocent Labs | On Site | May 2022 - Nov 2024</label>
                   <div className="rb-time">Full Time</div>
                   <p>
                     {`I'm`} a dedicated front-end developer with about 2 years
@@ -220,52 +197,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a2.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="resume-row">
-            <div className="row">
-              <div className="col-sm-3 col-md-3 col-xl-2">
-                <div className="rb-left">
-                  <img src="static/img/a3.png" title="" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-9 col-md-9 col-xl-10">
-                <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+
         </div>
       </div>
     </section>

@@ -29,7 +29,7 @@ const Index = ({ latestPosts }) => {
                   </p>
                   <p className="desc">
                     I do development services for customers of all sizes,
-                    specializing in creating stylish, modern websites and mobile
+                    specializing in React Native, Reactjs, NextJS to develop stylish, modern websites and mobile
                     applications.
                   </p>
                   <div className="btn-bar">
