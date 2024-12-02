@@ -76,7 +76,7 @@ const Contact = () => {
                 </li>
                 <li className="media">
                   <i className="ti-email" />
-                  <span className="media-body">support@mahabeer.me</span>
+                  <span className="media-body">mahabeer@mahabeer.online</span>
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
